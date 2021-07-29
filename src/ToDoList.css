@@ -1,0 +1,10 @@
+.addbutton{
+    margin-left: 5px;
+    border-radius: 6px;
+    background-color: white;
+    cursor: pointer;
+  }
+  
+  .entertodobox{
+    width:100px;
+  }
