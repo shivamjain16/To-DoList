@@ -1,17 +1,17 @@
 .todolistapp{
   margin-top : 50px;
   margin-left: 100px;
+  /* border : 2px solid black; */
 }
 
 .createbutton{
   padding : 5px;
-  
+  margin : 20px;
+  cursor: pointer;
 }
 
-.todolist{
-  color: white;
-  background-color: black;
-  font-family: cursive;
-  
-}
 
+.todolistcontainer{
+  display : flex;
+  flex-wrap: wrap;
+}
