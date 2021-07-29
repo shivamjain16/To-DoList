@@ -3,8 +3,39 @@
     border-radius: 6px;
     background-color: white;
     cursor: pointer;
+    width:50px;
   }
   
-  .entertodobox{
-    width:100px;
+.entertodobox{
+    flex-grow: 3;
+    width : 50px;
+}
+
+.entertodoadd{
+    display : flex;
+    flex-wrap: wrap;
+}
+.todolist{
+    font-family: cursive;
+    width:15%;
+    height : 300px;
+    margin : 20px;
+    /* border : 2px solid black; */
+    border-radius: 5px;
+    background-color: #8285b3;
+  }
+
+  .title{
+      /* border: 2px solid black; */
+      text-align : center;
+  }
+
+  .form{
+      /* border : 2px solid black; */
+      margin : 0px 10px;
+  }
+
+  .todos{
+      /* border : 2px solid black; */
+      margin : 10px 0px;
   }

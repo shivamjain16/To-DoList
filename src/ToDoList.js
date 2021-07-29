@@ -31,11 +31,16 @@ class ToDoList extends Component{
     render(){
         return( 
         <div className="todolist">
-            <h1>ToDoList</h1>
-            <form onSubmit={this.addTodo}>
-                <input type='text' placeholder='Enter a todo' value={this.state.todo} onChange={this.handleTodoChange} className="entertodobox"/>
-                <button type='submit' className="addbutton">Add</button>
-                {this.state.ToDos.map((item,index) => <div>{item}</div>)}
+            <h1 className="title">ToDoList</h1>
+            <form onSubmit={this.addTodo} className="form">
+                <div className="entertodoadd">
+                    <input type='text' placeholder='Enter a todo' value={this.state.todo} onChange={this.handleTodoChange} className="entertodobox"/>
+                    <button type='submit' className="addbutton">Add</button>
+                </div>
+                <div className="todos">
+                    {this.state.ToDos.map((item,index) => <div>{item}</div>)}
+                </div>
+                
             </form>
         </div> 
         );
