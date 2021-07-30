@@ -17,12 +17,13 @@
 }
 .todolist{
     font-family: cursive;
-    width:15%;
+    width:250px;
     height : 300px;
     margin : 20px;
     /* border : 2px solid black; */
     border-radius: 5px;
-    background-color: #8285b3;
+    background-color: #7272c1;
+    position: relative;
   }
 
   .title{
@@ -39,3 +40,21 @@
       /* border : 2px solid black; */
       margin : 10px 0px;
   }
+
+  .todolistclose{
+    position: absolute;
+    right:10px;
+    top:10px;
+    cursor: pointer;
+  }
+
+.titleinput{
+
+    margin-bottom: 20px;
+    margin-top: 25px;
+    margin-left: 10px;
+    margin-right: 10px;
+    border: 2px solid black;
+    padding: 4px;
+    
+}
