@@ -16,16 +16,26 @@ constructor(){
   createToDoList(){
     this.setState(prevState => ({
       id: prevState.id+1,
-      ToDoList: [prevState.ToDoList, <ToDoList />] 
+      ToDoList: [ ...prevState.ToDoList, prevState.id+1] 
     }))  
   }
+
+  removeToDoList = (id) => {
+    const filteredtodolist = this.state.ToDoList.filter(item => item !== id)
+    this.setState(prevState => ({
+      id: prevState.id,
+      ToDoList : filteredtodolist
+    }))  
+    console.log(filteredtodolist)
+}
+
 render(){
   console.log(this.state.id)
   return (
     <div className="todolistapp">
       <button onClick={() => this.createToDoList()} className="createbutton">Create</button>
       <div className="todolistcontainer">
-        {this.state.ToDoList}
+        {this.state.ToDoList.map(item => <ToDoList key={item} id = {item} removeList={this.removeToDoList} />)}
       </div>
       
       
